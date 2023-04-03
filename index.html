@@ -4,8 +4,8 @@
     
     <title>listapp❤️</title>
     <style>
-        body{2
-            background-color: rgb(149, 236, 247);
+        body{
+            background-color: rgb(228, 226, 226) ;
         }
         .navbar{
             background-color: black;
@@ -14,33 +14,87 @@
             align-items: center;
             color: white;
         }
+        
+        
+            
+        
         .nav-tittle{
             font-size: 45px;
             margin: auto;
         }
+        @media screen and (min-width:400px) and (max-width:600px) {
+            .nav-tittle{
+            font-size: 30px;
+            margin: auto;
+        }
+    }
         .inputlist{
             margin-left: 40%;
             height: 35px;
             width: 300px;
             margin-top: 100px;
+            background-color: #A5D7E8;
+            box-shadow: 0px 0px 1px 1px gray;
+            font-size: 15px;
             
         }
+        @media screen and (min-width:400px ) and (max-width:800px) {
+            .inputlist{
+            margin-left: 30%;
+            height: 30px;
+            width: 250px;
+            margin-top: 100px;
+            background-color: #A5D7E8;
+            box-shadow: 0px 0px 1px 1px gray;
+            font-size: 15px;
+            
+        }
+        }
         .listbutton{
+            margin-left: 45%;
+            height: 35px;
+            width: 150px;
+            margin-top: 10px;
+            border-radius: 15px;
+            background-color: #66347F;
+            color: white;
+            font-size:18px ;
+            box-shadow: 1px 1px 2px 2px gray;
+        }
+        @media screen and (min-width:400px ) and (max-width:800px) {
+            .listbutton{
             margin-left: 43%;
             height: 35px;
-            width: 200px;
+            width: 120px;
             margin-top: 10px;
+            border-radius: 13px;
+            background-color: #66347F;
+            color: white;
+            font-size:15px ;
+            box-shadow: 1px 1px 2px 2px gray;
         }
-    
+    }
+        .listbutton:hover{
+            background-color: rgb(201, 66, 66);
+            border-radius:25px;
+        }
         .list-item{
             margin-left: 40%;
-            margin-bottom: 10px;
+            color:#635985;
+            font-size: 25px;
         }
+        @media screen and (min-width:400px ) and (max-width:600px) {
+            .list-item{
+            margin-left: 30%;
+            color:#635985;
+            font-size: 20px;
+        }
+    }
     </style>
 </head>
 <body>
     <nav class="navbar">
-            <div class="nav-tittle"> <i>List App</i></div>  
+            <div class="nav-tittle"> <i> To Do List App......</i></div>  
     </nav>
     
 
