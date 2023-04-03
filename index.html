@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>listapp❤️</title>
+    <style>
+        body{2
+            background-color: rgb(149, 236, 247);
+        }
+        .navbar{
+            background-color: black;
+            display: flex;
+            height: 70px;
+            align-items: center;
+            color: white;
+        }
+        .nav-tittle{
+            font-size: 45px;
+            margin: auto;
+        }
+        .inputlist{
+            margin-left: 40%;
+            height: 35px;
+            width: 300px;
+            margin-top: 100px;
+            
+        }
+        .listbutton{
+            margin-left: 43%;
+            height: 35px;
+            width: 200px;
+            margin-top: 10px;
+        }
+    
+        .list-item{
+            margin-left: 40%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+            <div class="nav-tittle"> <i>List App</i></div>  
+    </nav>
+    
+
+    <input type="text" placeholder="enter name" id="inputlist"  class="inputlist"/><br>
+    <button class="listbutton" onClick="listbutton()">add to list  </button>
+
+    <ol id="list-item" class="list-item">
+           
+    </ol>
+
+<script>
+    const items = [];
+
+    function listbutton(){
+        const listcontent = document.getElementById("inputlist").value;
+        items.push(listcontent);
+
+        document.getElementById("inputlist").value = "";
+        
+        const listitem = document.getElementById("list-item");
+        listitem.innerHTML="";
+
+        for(let i=0; i<items.length; i++)
+        {
+            listitem.innerHTML = listitem.innerHTML + `<li>${items[i]}</li>` ;
+        }
+    }
+</script>
+</body>
+</html>
